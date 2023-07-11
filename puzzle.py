@@ -67,6 +67,7 @@ knowledge2 = And(
 # C says "A is a knight."
 knowledge3 = And(
     Or(AKnave, AKnight),
+    Implication(AKnight, AKnight),
 
 )
 
